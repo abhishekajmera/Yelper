@@ -3,10 +3,11 @@ import json
 from flask import Flask, request, jsonify
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 
 @app.route('/')
+@app.route('/index')
 def hello():
     """Return a friendly HTTP greeting."""
     return app.send_static_file('index.html')
