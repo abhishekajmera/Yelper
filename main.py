@@ -12,9 +12,9 @@ def hello():
     return app.send_static_file('index.html')
 
 
-@app.route('/search', methods=["GET"])
-def do_search():
-    print('hello')
+# @app.route('/search', methods=["GET"])
+# def do_search():
+#     print('hello')
 
 
 if __name__ == '__main__':
