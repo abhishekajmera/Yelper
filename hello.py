@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return app.send_static_file('base.html')
+    return app.send_static_file('place.html')
 
 
 @app.route('/search', methods=["GET"])
